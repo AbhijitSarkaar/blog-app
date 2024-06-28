@@ -1,0 +1,9 @@
+steps 
+    - create virtual environment and activate 
+    - install django 
+    - create project blog_main 
+    - migrate default tables 
+    - create super user 
+    - create url and view for homepage
+    - create templates folder, setup template in project settings, create template for homepage 
+    - load static files in template 
