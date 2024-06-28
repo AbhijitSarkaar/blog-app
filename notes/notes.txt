@@ -52,6 +52,16 @@ section wise progress
                     - blog_main/settings.py
                         - DEBUG = FALSE
                         - ALLOWED_HOSTS=['*']
+        - template inheritence 
+            - base.html 
+            - extends base.html in all other pages 
+            - <% block content %> <% endblock %>
+        - context processors
+            - it provides context data to all templates 
+            - a context processor should return a dict 
+            - the context processor is to be added to the settings at project level 
+                - blog_main/settings.py 
+                    - TEMPLATES[0].OPTIONS.context_processors 
 
 
 
