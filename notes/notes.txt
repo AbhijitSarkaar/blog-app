@@ -1,9 +1,38 @@
-steps 
-    - create virtual environment and activate 
-    - install django 
-    - create project blog_main 
-    - migrate default tables 
-    - create super user 
-    - create url and view for homepage
-    - create templates folder, setup template in project settings, create template for homepage 
-    - load static files in template 
+section wise progress 
+    
+    - project 3 - blog application
+        - create virtual environment and activate 
+        - install django 
+        - create project blog_main 
+        - migrate default tables 
+        - create super user 
+        - create url and view for homepage
+        - create templates folder, setup template in project settings, create template for homepage 
+        - load static files in template 
+
+
+    - category model, blog model, media files 
+        - create an app 'blogs'
+        - category model 
+            - create Category model and define the columns 
+            - create migration script and migrate category model  
+                - python manage.py makemigrations
+                - python manage.py migrate 
+            - register the model in admin panel         
+        - media file configuration
+            - MEDIA_URL, MEDIA_ROOT in settings.py 
+            - update blog_main/urls.py with media related configurations
+            - this are images uploaded by users
+        - blog model 
+            - create BLOG model ane define the columns 
+            - establish one-to-many relationship from category -> blog, user -> blog 
+                - add foreign key of category table to blog schema 
+                - add foreign key of users table to blog schema 
+            - users table is created by default 
+            - slugs are used to define the urls of the blogs 
+            - create migration script and migrate blog model 
+            - register the model in admin panel 
+        - customise admin panel 
+            - prepopulate slugs by customising Admin panel for Blog model
+            - add search fields using 'search_fields' 
+            - add columns to records in app table using 'list_display'
