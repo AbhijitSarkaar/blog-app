@@ -1,5 +1,5 @@
 section wise progress 
-    
+
     - project 3 - blog application
         - create virtual environment and activate 
         - install django 
@@ -9,7 +9,6 @@ section wise progress
         - create url and view for homepage
         - create templates folder, setup template in project settings, create template for homepage 
         - load static files in template 
-
 
     - category model, blog model, media files 
         - create an app 'blogs'
@@ -36,3 +35,57 @@ section wise progress
             - prepopulate slugs by customising Admin panel for Blog model
             - add search fields using 'search_fields' 
             - add columns to records in app table using 'list_display'
+
+    - foreign key relationship, display blog posts 
+        - display cateogries and blog posts stored in database 
+
+    - 404 error page, template inheritence, context processors
+        - posts by category feature
+            - define project level urls 
+            - define app level urls 
+            - get posts by category in views 
+            - pass posts data into templates using context
+            - error handling 
+                - try except block for handling error case scenario 
+                - 404 error page handling
+                    - 'get_object_or_404' to be used in case of custom error page
+                    - blog_main/settings.py
+                        - DEBUG = FALSE
+                        - ALLOWED_HOSTS=['*']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
