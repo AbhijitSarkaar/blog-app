@@ -63,6 +63,9 @@ section wise progress
                 - blog_main/settings.py 
                     - TEMPLATES[0].OPTIONS.context_processors 
 
+        - single blog feature 
+            - slug is used to fetch blog content 
+
 
 
 
