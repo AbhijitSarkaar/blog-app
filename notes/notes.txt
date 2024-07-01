@@ -77,12 +77,15 @@ section wise progress
                 - Q(title_icontains=keyword) | Q(short_description_icontains=keyword)
 
         - login and registration 
-            - registration page
+            - registration flow 
                 - form is created at server side and is served to client
                 - error handling, password verification is done by default once the form is submitted
                 - in case of errors, form elements are updated at server and served to client 
+                
             - user creation
-                - form.save()  
+                - form.save() 
+
+            - login flow 
 
 
 
