@@ -1,0 +1,21 @@
+blog application     
+
+    - an application which creates blogs for people to read 
+    - the data for blog is stored in database 
+    - blogs are categorised into different categories
+    - an user can create and update blogs under different categories 
+    - an admin panel is present to support functioning of the website's operations
+        - super user has capability to make any kind of changes to the website
+    - a dashboard is provided to user to understand the relevant data of the user's work on the platform
+
+
+system design   
+    - resources / tables 
+        - blogs 
+        - categories 
+        - users 
+    
+    - relationships 
+        - many to one 
+            - blogs to categories 
+            - blogs to users 

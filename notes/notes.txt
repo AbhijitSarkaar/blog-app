@@ -103,6 +103,9 @@ section wise progress
             - users can be provided permissions individually 
             - users can be assigned groups. a group has a set of pre defined permissions e.g editor, manager etc 
 
+        - custom dashboard feature 
+            -  
+
 
 
 
