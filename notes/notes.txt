@@ -86,6 +86,22 @@ section wise progress
                 - form.save() 
 
             - login flow 
+                - django creates the template on server side and sends to client. client just renders the page 
+                - user sessions
+                    - auth.login(username=username, password=password)
+                        - response header contains Set-Cookie
+                        - it stores sessionid in browser 
+                        - whenever request is sent to server after login, it contains the cookie 'sessionid' 
+                        - this is how server knows which user is currently logged in 
+                        - session data is stored in 'django_session' table 
+
+        - authentication and authorization
+            - authentication    
+                - identifying the user and letting the user enter the system 
+            - authorization
+                - providing permission to theuser for specific actions inside the system
+            - users can be provided permissions individually 
+            - users can be assigned groups. a group has a set of pre defined permissions e.g editor, manager etc 
 
 
 
