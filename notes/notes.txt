@@ -72,6 +72,17 @@ section wise progress
             - SocialLink model 
                 - title 
                 - link 
+        - search feature 
+            - OR operator in WHERE 
+                - Q(title_icontains=keyword) | Q(short_description_icontains=keyword)
+
+        - login and registration 
+            - registration page
+                - form is created at server side and is served to client
+                - error handling, password verification is done by default once the form is submitted
+                - in case of errors, form elements are updated at server and served to client 
+            - user creation
+                - form.save()  
 
 
 
