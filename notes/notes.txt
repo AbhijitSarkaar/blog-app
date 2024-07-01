@@ -66,6 +66,13 @@ section wise progress
         - single blog feature 
             - slug is used to fetch blog content 
 
+        - about us, social links of the website 
+            - About model 
+                - text 
+            - SocialLink model 
+                - title 
+                - link 
+
 
 
 
