@@ -112,6 +112,8 @@ section wise progress
             - template
                 - include a template 
                     - {% include 'dashboard/sidebar.html' %}
+            - forms 
+                - forms can be created on server side based on model fields 
 
 
 
