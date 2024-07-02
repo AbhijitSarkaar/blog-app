@@ -90,10 +90,12 @@ section wise progress
                 - user sessions
                     - auth.login(username=username, password=password)
                         - response header contains Set-Cookie
-                        - it stores sessionid in browser 
+                        - it stores 'sessionid' in browser 
                         - whenever request is sent to server after login, it contains the cookie 'sessionid' 
                         - this is how server knows which user is currently logged in 
                         - session data is stored in 'django_session' table 
+            - logout flow
+                - Set-cookie: sessionid="" in response headers is sent to client 
 
         - authentication and authorization
             - authentication    
@@ -102,9 +104,14 @@ section wise progress
                 - providing permission to theuser for specific actions inside the system
             - users can be provided permissions individually 
             - users can be assigned groups. a group has a set of pre defined permissions e.g editor, manager etc 
+            - 'user' is present across all templates as logged in user data 
 
         - custom dashboard feature 
-            -  
+            - login decorator for restricting access to authenticated users 
+            - decorators are used to views 
+            - template
+                - include a template 
+                    - {% include 'dashboard/sidebar.html' %}
 
 
 
