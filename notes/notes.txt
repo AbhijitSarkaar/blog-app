@@ -63,24 +63,25 @@ section wise progress
                 - blog_main/settings.py 
                     - TEMPLATES[0].OPTIONS.context_processors 
 
-        - single blog feature 
-            - slug is used to fetch blog content 
+    - single blog feature 
+        - slug is used to fetch blog content 
 
-        - about us, social links of the website 
-            - About model 
-                - text 
-            - SocialLink model 
-                - title 
-                - link 
-        - search feature 
-            - OR operator in WHERE 
-                - Q(title_icontains=keyword) | Q(short_description_icontains=keyword)
+    - about us, social links of the website 
+        - About model 
+            - text 
+        - SocialLink model 
+            - title 
+            - link 
+    
+    - search feature 
+        - OR operator in WHERE 
+            - Q(title_icontains=keyword) | Q(short_description_icontains=keyword)
 
-        - login and registration 
-            - registration flow 
-                - form is created at server side and is served to client
-                - error handling, password verification is done by default once the form is submitted
-                - in case of errors, form elements are updated at server and served to client 
+    - login and registration 
+        - registration flow 
+            - form is created at server side and is served to client
+            - error handling, password verification is done by default once the form is submitted
+            - in case of errors, form elements are updated at server and served to client 
                 
             - user creation
                 - form.save() 
@@ -97,7 +98,7 @@ section wise progress
             - logout flow
                 - Set-cookie: sessionid="" in response headers is sent to client 
 
-        - authentication and authorization
+    - authentication and authorization
             - authentication    
                 - identifying the user and letting the user enter the system 
             - authorization
@@ -106,14 +107,15 @@ section wise progress
             - users can be assigned groups. a group has a set of pre defined permissions e.g editor, manager etc 
             - 'user' is present across all templates as logged in user data 
 
-        - custom dashboard feature 
+    - custom dashboard feature 
             - login decorator for restricting access to authenticated users 
             - decorators are used to views 
             - template
                 - include a template 
                     - {% include 'dashboard/sidebar.html' %}
             - forms 
-                - forms can be created on server side based on model fields 
+                - forms can be created on server side based on model fields
+                - it can be displayed on the templates by pasing through context 
 
 
 
