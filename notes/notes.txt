@@ -116,6 +116,10 @@ section wise progress
             - forms 
                 - forms can be created on server side based on model fields
                 - it can be displayed on the templates by pasing through context 
+                - logged in user data can be accessed in http request using request.user 
+                - file upload 
+                    - enctype='multipart/form-data' in template 
+                    - request.FILES in views 
 
 
 
