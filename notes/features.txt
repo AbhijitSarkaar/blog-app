@@ -23,10 +23,50 @@ system design
             - blogs to users 
 
 
-
 comment feature 
-    - model
-        - author id foreign key
-        - comment text 
-        - blog id foreign key 
-    - 
+
+    - tables 
+        - blogs_comment 
+        - blogs_blog 
+        - users
+
+    functionality
+        - comment is done on a blog post 
+        - on creation time comment is created with blog id and logged in user id with the text 
+
+    frontend
+        - a text field in the blog page 
+        - list of exising comments on a blog page displaying user and time the comment was added
+    
+    backend 
+        - urls to add route 
+        - view to write logic of GET comments, POST comments 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
