@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponseRedirect
 from .models import Blog, Category, Comment
 from django.contrib.auth.models import User
 from blog_main.forms import AddCommentForm
@@ -41,4 +41,6 @@ def add_comment(request, post_id):
             post = Blog.objects.get(pk=post_id)
             comment.blog = post
             comment.save()
-            return redirect('home')
+            url = '/blogs/' + str(post.slug)
+            return HttpResponseRedirect(url)
+

@@ -106,6 +106,7 @@ section wise progress
             - users can be provided permissions individually 
             - users can be assigned groups. a group has a set of pre defined permissions e.g editor, manager etc 
             - 'user' is present across all templates as logged in user data 
+                - user.is_authenticated for user login session 
 
     - custom dashboard feature 
             - login decorator for restricting access to authenticated users
