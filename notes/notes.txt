@@ -108,7 +108,7 @@ section wise progress
             - 'user' is present across all templates as logged in user data 
 
     - custom dashboard feature 
-            - login decorator for restricting access to authenticated users 
+            - login decorator for restricting access to authenticated users
             - decorators are used to views 
             - template
                 - include a template 
@@ -120,6 +120,13 @@ section wise progress
                 - file upload 
                     - enctype='multipart/form-data' in template 
                     - request.FILES in views 
+            - security
+                - csrf token
+                    - csrf token used for form POST requests 
+                - user permissions
+                    - 'perms.auth.view_user' used for 'view_user' permission from 'auth'
+                    - route level access based on user permissions 
+                        - use 'perms.auth.required_permission' on the page to display / hide the content 
 
 
 

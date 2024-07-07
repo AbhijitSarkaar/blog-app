@@ -21,3 +21,8 @@ system design
         - many to one 
             - blogs to categories 
             - blogs to users 
+
+
+
+to create users and manage user access to the system 
+    - role 'manager' with read / write access to users table 
