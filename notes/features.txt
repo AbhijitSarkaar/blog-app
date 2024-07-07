@@ -24,5 +24,9 @@ system design
 
 
 
-to create users and manage user access to the system 
-    - role 'manager' with read / write access to users table 
+comment feature 
+    - model
+        - author id foreign key
+        - comment text 
+        - blog id foreign key 
+    - 
